@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="parser.js"></script>
+    <script src="commands.js"></script>
+    <script src="turtle.js"></script>
+    <script src="sketch.js"></script>
+    <title>logo interpreter</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center text-white font-weight-bold my-5">Logo Interpreter</h1>
+      <div class="row ">
+        <div class="col-lg-6 p-0 pb-4 mt-4">
+          <div class="px-4">
+            <p class="text-white">
+              Logo let's you draw lines with a few basic commands.<br>
+              You can type logo code in this textbox, the code will then be interpreted in realtime.<br>
+              Here are some examples:
+            </p>
+            <div class="center">
+              <textarea class="bg-dark text-white" id="code" cols="45" rows="4" spellcheck="false">repeat 5 [repeat 5 [rt 144 fd 170] rt 144]</textarea>
+            </div>
+            <div id="exampleButtonContainer" class="btn-group btn-group-toggle center mt-4" data-toggle="buttons">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-0 center" id="sketch-holder"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #222222 ;
+}
+.center {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p5Canvas {
+  border: 1px solid white;
+  border-radius: 2px;
+}
