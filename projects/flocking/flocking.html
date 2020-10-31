@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="boid.js"></script>
+    <script src="flock.js"></script>
+    <title>Flocking Simulator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center text-white font-weight-bold mt-5 mb-3">Flocking Simulator</h1>
+      <div class="row">
+        <div class="col-12 p-0 pb-4 mt-4">
+          <div class="px-4 center">
+            <p class="text-white">
+              I tried.
+            </p>
+          </div>
+          <div id="sketch-holder" class="center"></div>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-4 center-margin my-2">
+            <div class="border p-3">
+              <h5 class="mb-3 text-center font-weight-bold text-white">Amount</h5>
+              <div class="center mt-3" id="boidsAmountSlider"> </div>
+            </div>
+          </div>
+          <div class="col-4 center-margin my-2">
+            <div class="border p-3">
+              <h5 class="mb-3 text-center font-weight-bold text-white">perception<br>radius</h5>
+              <div class="center mt-3" id="perceptionRSlider"> </div>
+            </div>
+          </div>
+          <div class="col-4 center-margin my-2">
+            <div class="border p-3">
+              <h5 class="mb-3 text-center font-weight-bold text-white">size</h5>
+              <div class="center mt-3" id="sizeSlider"> </div>
+            </div>
+          </div>
+          <div class="col-4 center-margin my-2">
+            <div class="border p-3">
+              <h5 class="mb-3 text-center font-weight-bold text-white">speed</h5>
+              <div class="center mt-3" id="maxSpeedSlider"> </div>
+            </div>
+          </div>
+          <div class="col-4 center-margin my-2">
+            <div class="border p-3">
+              <h5 class="mb-3 text-center font-weight-bold text-white">max force</h5>
+              <div class="center mt-3" id="maxForceSlider"> </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-8 center-margin col-lg-4 col-md-4 my-3">
+          <div class="border p-3">
+            <h5 class="mb-3 text-center font-weight-bold text-white">Alignment</h5>
+            <div class="center my-3" id="alignment"></div>
+          </div>
+        </div>
+        <div class="col-8 center-margin col-lg-4 col-md-4 my-3">
+          <div class="border p-3">
+            <h5 class="mb-3 text-center font-weight-bold text-white">Cohesion</h5>
+            <div class="center my-3" id="cohesion"></div>
+          </div>
+        </div>
+        <div class="col-8 center-margin col-lg-4 col-md-4 my-3">
+          <div class="border p-3">
+            <h5 class="mb-3 text-center font-weight-bold text-white">Separation</h5>
+            <div class="center my-3" id="separation"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
